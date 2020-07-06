@@ -1,0 +1,51 @@
+.header-section {
+    background-color: #1f968a;
+}
+
+.call-us {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    margin-right: 32px;
+
+    img {
+        float: left;
+        margin-right: 13px;
+        height: 38px;
+    }
+
+    p {
+        font-weight: 500;
+        color: #777;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        &> span {
+            display: block;
+            font-weight: 900;
+            color: #212121;
+        }
+
+        a {
+            color: #245178;
+            font-size: 18px;
+        }
+    }
+}
+
+
+.navbar-brand {
+    width: 140px;
+    margin: 0 20px;
+    @media only screen and (min-width: 1400px) {
+        width: 240px;
+        margin: 0 40px;
+      }
+}
+
+.is-sticky {
+    .navbar-brand {
+        width: 140px;
+    }
+}

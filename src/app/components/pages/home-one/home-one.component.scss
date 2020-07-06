@@ -1,0 +1,84 @@
+.home-section {
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-transform: capitalize;
+        color: #ffffff;
+
+        span {
+            color: #f9899f;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+
+
+    .home-text .default-btn.active {
+        background: #ffffff;
+        color: #031888;
+        border: 0;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .home-img {
+        // position: relative;
+        // margin: 0 40px;
+        // width: 40%;
+        position: absolute;
+        margin: 0;
+        width: 40%;
+        right: 0;
+        transform: translate(0%, -50%);
+        top: 50%;
+    }
+
+    .home-slider-item .container {
+        display: flex;
+    }
+}
+
+
+.section-head {
+    max-width: 100%;
+}
+
+
+.hire-section .hire-text .section-head {
+    margin-left: 0;
+}
+
+.hire-section {
+    &__container {
+        display: flex;
+
+        &>* {
+            flex: 1;
+        }
+
+    }
+
+    &__content {
+        .hire-text {
+            padding: 100px 80px;
+        }
+    }
+
+    &__img {
+        .hire-img {
+            &--1 {
+                background-image: url(/assets/img/hire/hire-1.jpg);
+            }
+
+            &--2 {
+                background-image: url(/assets/img/hire/hire-2.jpg);
+            }
+        }
+    }
+}
