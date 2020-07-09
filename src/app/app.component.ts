@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
+import { Router, NavigationStart, NavigationCancel, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { filter } from 'rxjs/operators';
+import { SEOServiceService } from './seoservice.service';
+import { filter, map, mergeMap } from 'rxjs/operators';
 declare let $: any;
 
 @Component({
@@ -19,11 +20,38 @@ export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
 
-    constructor(private router: Router) {
-    }
+    constructor(
+        private router: Router,
+        private activatedRoute: ActivatedRoute,
+        private _seoService: SEOServiceService
+    ) { }
 
     ngOnInit(){
         this.recallJsFuntions();
+
+        this.router.events.pipe(
+            filter((event) => event instanceof NavigationEnd),
+            map(() => this.activatedRoute),
+            map((route) => {
+              while (route.firstChild) route = route.firstChild;
+              return route;
+            }),
+            filter((route) => route.outlet === 'primary'),
+            mergeMap((route) => route.data)
+          )
+            .subscribe((event) => {
+              this._seoService.updateTitle(event['title']);
+              this._seoService.updateOgUrl(event['ogUrl']);
+              //Updating Description tag dynamically with title
+              this._seoService.updateDescription(event['title'] + event['description'])
+            });
+      
+          this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+              return;
+            }
+            window.scrollTo(0, 0)
+          });
     }
 
     recallJsFuntions() {
@@ -46,3 +74,9 @@ export class AppComponent implements OnInit {
         });
     }
 }
+
+
+
+
+
+

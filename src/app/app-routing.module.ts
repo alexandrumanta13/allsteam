@@ -17,25 +17,59 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { TeamComponent } from './components/pages/team/team.component';
 import { TeamTwoComponent } from './components/pages/team-two/team-two.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { OfficeCleaningComponent } from './components/pages/services/office-cleaning/office-cleaning.component';
+import { CleaningAtHomeComponent } from './components/pages/services/cleaning-at-home/cleaning-at-home.component';
+import { CleaningRezidentialStairsComponent } from './components/pages/services/cleaning-rezidential-stairs/cleaning-rezidential-stairs.component';
+import { CleaningHorecaComponent } from './components/pages/services/cleaning-horeca/cleaning-horeca.component';
 
 const routes: Routes = [
-    {path: '', component: HomeOneComponent},
-    {path: 'home-two', component: HomeTwoComponent},
-    {path: 'home-three', component: HomeThreeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'service', component: ServiceComponent},
-    {path: 'service-two', component: ServiceTwoComponent},
-    {path: 'service-three', component: ServiceThreeComponent},
-    {path: 'service-details', component: ServiceDetailsComponent},
-    {path: 'blog', component: BlogComponent},
-    {path: 'blog-right-sidebar', component: BlogRightSidebarComponent},
-    {path: 'blog-details', component: BlogDetailsComponent},
-    {path: 'pricing', component: PricingComponent},
-    {path: 'recent-project', component: RecentProjectComponent},
-    {path: 'error', component: ErrorComponent},
-    {path: 'team', component: TeamComponent},
-    {path: 'team-two', component: TeamTwoComponent},
-    {path: 'contact', component: ContactComponent}
+    {
+        path: '', component: HomeOneComponent,
+        data: {
+            title: 'Curatenie Brasov',
+            description: 'Allsteam',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: 'curatenie-birouri-brasov', component: OfficeCleaningComponent,
+        data: {
+            title: 'Curatenie birouri Brasov',
+            description: 'Suntem o firma de curatenie la domiciliu. Venim acasa la tine, oriunde in Brasov si in zonele limitrofe. Contacteaza-ne pentru detalii.',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: 'curatenie-la-domiciliu-brasov', component: CleaningAtHomeComponent,
+        data: {
+            title: 'Curatenie la domiciliu Brasov',
+            description: 'Un mediu curat de lucru inseamna un mediu placut pentru angajati, fapt care sustine cresterea productivitatii. Apleaza la servicii de curatenie birouri in Brasov.',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: 'curatenie-scari-de-bloc-brasov', component: CleaningRezidentialStairsComponent,
+        data: {
+            title: 'Curatenie scari de bloc Brasov',
+            description: 'Apelati cu increredere la echipa noastra de curatenie scari de bloc din Brasov, pentru un bloc ingrijit, curat, igienizat si sigur pentru locatari.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'curatenie-restaurante-cafenele-baruri-brasov', component: CleaningHorecaComponent,
+        data: {
+            title: 'Curatenie resaturante cafenele baruri Brasov',
+            description: 'AllSteam - echipa ta de curatenie de incredere pentru servicii de curatenie, igienizare si dezinfectare din zona HoReCa: restaurante, cafenele, baruri.',
+            ogUrl: 'your og url'
+        }
+    },
+    { path: 'service', component: ServiceComponent },
+    { path: 'pricing', component: PricingComponent },
+    { path: 'error', component: ErrorComponent },
+    { path: 'contact', component: ContactComponent }
 ];
 
 @NgModule({

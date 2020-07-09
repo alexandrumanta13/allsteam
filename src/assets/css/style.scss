@@ -1477,7 +1477,7 @@ h3 {
         &::before {
             position: absolute;
             content:'';
-            background-image: url(../img/map-2.png);
+            background-image: url(../img/map-3.png);
             background-position: center center;
             background-size: cover;
             width: 100%;
@@ -4972,4 +4972,8 @@ h3 {
     max-width: 1510px;
     margin-left: auto;
     margin-right: unset;
+}
+
+.service-details-area .service-details-post ul li {
+    width: 100%;
 }

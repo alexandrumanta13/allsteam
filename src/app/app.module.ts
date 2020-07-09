@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PreloaderComponent } from './components/layouts/preloader/preloader.component';
@@ -23,6 +28,11 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { TeamComponent } from './components/pages/team/team.component';
 import { TeamTwoComponent } from './components/pages/team-two/team-two.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { ServicesComponent } from './components/pages/services/services.component';
+import { OfficeCleaningComponent } from './components/pages/services/office-cleaning/office-cleaning.component';
+import { CleaningAtHomeComponent } from './components/pages/services/cleaning-at-home/cleaning-at-home.component';
+import { CleaningRezidentialStairsComponent } from './components/pages/services/cleaning-rezidential-stairs/cleaning-rezidential-stairs.component';
+import { CleaningHorecaComponent } from './components/pages/services/cleaning-horeca/cleaning-horeca.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +56,20 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     ErrorComponent,
     TeamComponent,
     TeamTwoComponent,
-    ContactComponent
+    ContactComponent,
+    ServicesComponent,
+    OfficeCleaningComponent,
+    CleaningAtHomeComponent,
+    CleaningRezidentialStairsComponent,
+    CleaningHorecaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
