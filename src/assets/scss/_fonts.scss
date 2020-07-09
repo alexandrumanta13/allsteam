@@ -1,0 +1,45 @@
+
+
+@font-face {
+  font-family: '#{$allsteam-font-family}';
+  src:  url('#{$allsteam-font-path}/#{$allsteam-font-family}.eot?gfj91g');
+  src:  url('#{$allsteam-font-path}/#{$allsteam-font-family}.eot?gfj91g#iefix') format('embedded-opentype'),
+    url('#{$allsteam-font-path}/#{$allsteam-font-family}.ttf?gfj91g') format('truetype'),
+    url('#{$allsteam-font-path}/#{$allsteam-font-family}.woff?gfj91g') format('woff'),
+    url('#{$allsteam-font-path}/#{$allsteam-font-family}.svg?gfj91g##{$allsteam-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$allsteam-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-positive-review {
+  &:before {
+    content: $icon-positive-review; 
+  }
+}
+.icon-fingerprint {
+  &:before {
+    content: $icon-fingerprint; 
+  }
+}
+.icon-happy {
+  &:before {
+    content: $icon-happy; 
+  }
+}
+

@@ -1070,7 +1070,7 @@ h3 {
     &::before {
         position: absolute;
         content: '';
-        background:$blue-color;
+        background: #06707c;
         width: 100%;
         height: 100%;
         top: 0;
@@ -1110,11 +1110,12 @@ h3 {
         padding-top: 85px;
         padding-bottom:15px;
         box-shadow: 7px 5px 30px rgba(72,73,121,.15);
+        height: 400px;
 
         &::before {
             position: absolute;
             content: '';
-            background-image: url(../img/map.png);
+            background-image: url(../img/igienizare-prin-nebulizare.png);
             background-position: center center;
             background-size: cover;
             width: 100%;
@@ -1285,7 +1286,7 @@ h3 {
     &::before {
         position: absolute;
         content: '';
-        background: $blue-color;
+        background: #06707c;
         width: 100%;
         height: 100%;
         left: 0;

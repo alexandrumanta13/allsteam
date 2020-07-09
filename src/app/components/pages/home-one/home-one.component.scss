@@ -58,6 +58,18 @@
     &__container {
         display: flex;
 
+        @media only screen and (max-width: 480px) {
+
+
+            &:first-child {
+                flex-direction: column-reverse;
+            }
+
+            &:last-child {
+                flex-direction: column;
+            }
+        }
+
         &>* {
             flex: 1;
         }
@@ -66,18 +78,26 @@
 
     &__content {
         .hire-text {
-            padding: 100px 80px;
+            padding: 100px 60px;
+
+            @media only screen and (max-width: 480px) {
+                padding: 40px;
+
+                .row > * {
+                    margin: 0;
+                }
+            }
         }
     }
 
     &__img {
         .hire-img {
             &--1 {
-                background-image: url(/assets/img/hire/hire-1.jpg);
+                background-image: url(/assets/img/hire/curatenie-la-domiciliu-home.jpg);
             }
 
             &--2 {
-                background-image: url(/assets/img/hire/hire-2.jpg);
+                background-image: url(/assets/img/hire/curatenie-pentru-afaceri.jpg);
             }
         }
     }
