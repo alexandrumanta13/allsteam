@@ -21,6 +21,9 @@ import { OfficeCleaningComponent } from './components/pages/services/office-clea
 import { CleaningAtHomeComponent } from './components/pages/services/cleaning-at-home/cleaning-at-home.component';
 import { CleaningRezidentialStairsComponent } from './components/pages/services/cleaning-rezidential-stairs/cleaning-rezidential-stairs.component';
 import { CleaningHorecaComponent } from './components/pages/services/cleaning-horeca/cleaning-horeca.component';
+import { CleaningAfterConstructorComponent } from './components/pages/services/cleaning-after-constructor/cleaning-after-constructor.component';
+import { CleaningBeautySalonComponent } from './components/pages/services/cleaning-beauty-salon/cleaning-beauty-salon.component';
+import { CleaningSofaComponent } from './components/pages/cleaning/cleaning-sofa/cleaning-sofa.component';
 
 const routes: Routes = [
     {
@@ -63,6 +66,30 @@ const routes: Routes = [
         data: {
             title: 'Curatenie resaturante cafenele baruri Brasov',
             description: 'AllSteam - echipa ta de curatenie de incredere pentru servicii de curatenie, igienizare si dezinfectare din zona HoReCa: restaurante, cafenele, baruri.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'curatenie-dupa-constructor-renovare-brasov', component: CleaningAfterConstructorComponent,
+        data: {
+            title: 'Curatenie dupa constructor Brasov',
+            description: 'O firma de curatenie profesionala este capabila sa realizaeze cele mai complexe operatiuni de curatenie dupa constructor sau renovare de care ai nevoie. Apeleaza cu incredere!',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'curatenie-saloane-infrumusetare-cabinete-medicale-brasov', component: CleaningBeautySalonComponent,
+        data: {
+            title: 'Curatenie saloane infrumusetare cabinete medicale Brasov',
+            description: 'Suntem o firma de curatenie profesionala din Brasov si iti punem  la dispozitie servicii de curatenie salaone de infrumusetare si cabinete medicale.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'curatare-canapele-fotolii-scaune-brasov', component: CleaningSofaComponent,
+        data: {
+            title: 'Curatenie canapele fotolii scaune Brasov',
+            description: 'Allsteam este o firma de curatare canapele in Brasov si in zinele limitrofe. Realizam servicii complexe de curatenie profesionala la domiciliu. Contacteaza-ne pentru detalii.',
             ogUrl: 'your og url'
         }
     },

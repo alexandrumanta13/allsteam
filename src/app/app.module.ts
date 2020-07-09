@@ -33,6 +33,10 @@ import { OfficeCleaningComponent } from './components/pages/services/office-clea
 import { CleaningAtHomeComponent } from './components/pages/services/cleaning-at-home/cleaning-at-home.component';
 import { CleaningRezidentialStairsComponent } from './components/pages/services/cleaning-rezidential-stairs/cleaning-rezidential-stairs.component';
 import { CleaningHorecaComponent } from './components/pages/services/cleaning-horeca/cleaning-horeca.component';
+import { CleaningAfterConstructorComponent } from './components/pages/services/cleaning-after-constructor/cleaning-after-constructor.component';
+import { CleaningBeautySalonComponent } from './components/pages/services/cleaning-beauty-salon/cleaning-beauty-salon.component';
+import { CleaningComponent } from './components/pages/cleaning/cleaning.component';
+import { CleaningSofaComponent } from './components/pages/cleaning/cleaning-sofa/cleaning-sofa.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +65,11 @@ import { CleaningHorecaComponent } from './components/pages/services/cleaning-ho
     OfficeCleaningComponent,
     CleaningAtHomeComponent,
     CleaningRezidentialStairsComponent,
-    CleaningHorecaComponent
+    CleaningHorecaComponent,
+    CleaningAfterConstructorComponent,
+    CleaningBeautySalonComponent,
+    CleaningComponent,
+    CleaningSofaComponent
   ],
   imports: [
     BrowserModule,
