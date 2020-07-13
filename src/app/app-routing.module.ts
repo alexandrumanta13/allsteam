@@ -1,21 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeOneComponent } from './components/pages/home-one/home-one.component';
-import { HomeTwoComponent } from './components/pages/home-two/home-two.component';
-import { HomeThreeComponent } from './components/pages/home-three/home-three.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ServiceComponent } from './components/pages/service/service.component';
-import { ServiceTwoComponent } from './components/pages/service-two/service-two.component';
-import { ServiceThreeComponent } from './components/pages/service-three/service-three.component';
-import { ServiceDetailsComponent } from './components/pages/service-details/service-details.component';
-import { BlogComponent } from './components/pages/blog/blog.component';
-import { BlogRightSidebarComponent } from './components/pages/blog-right-sidebar/blog-right-sidebar.component';
-import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { PricingComponent } from './components/pages/pricing/pricing.component';
-import { RecentProjectComponent } from './components/pages/recent-project/recent-project.component';
 import { ErrorComponent } from './components/pages/error/error.component';
-import { TeamComponent } from './components/pages/team/team.component';
-import { TeamTwoComponent } from './components/pages/team-two/team-two.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { OfficeCleaningComponent } from './components/pages/services/office-cleaning/office-cleaning.component';
 import { CleaningAtHomeComponent } from './components/pages/services/cleaning-at-home/cleaning-at-home.component';
@@ -24,6 +13,19 @@ import { CleaningHorecaComponent } from './components/pages/services/cleaning-ho
 import { CleaningAfterConstructorComponent } from './components/pages/services/cleaning-after-constructor/cleaning-after-constructor.component';
 import { CleaningBeautySalonComponent } from './components/pages/services/cleaning-beauty-salon/cleaning-beauty-salon.component';
 import { CleaningSofaComponent } from './components/pages/cleaning/cleaning-sofa/cleaning-sofa.component';
+import { CleaningFloorComponent } from './components/pages/cleaning/cleaning-floor/cleaning-floor.component';
+import { CleaningServiceHorecaComponent } from './components/pages/cleaning/cleaning-horeca/cleaning-horeca.component';
+import { CleaningAutoComponent } from './components/pages/cleaning/cleaning-auto/cleaning-auto.component';
+import { CleaningSpecialServicesComponent } from './components/pages/cleaning/cleaning-special-services/cleaning-special-services.component';
+import { SanitizationAndDesinfectionComponent } from './components/pages/sanitization-and-desinfection/sanitization-and-desinfection.component';
+import { GdprComponent } from './components/pages/gdpr/gdpr.component';
+import { ConfidentialityComponent } from './components/pages/confidentiality/confidentiality.component';
+import { CookiesComponent } from './components/pages/cookies/cookies.component';
+import { TermsComponent } from './components/pages/terms/terms.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
+import { ServicesComponent } from './components/pages/services/services.component';
+import { CleaningComponent } from './components/pages/cleaning/cleaning.component';
 
 const routes: Routes = [
     {
@@ -93,10 +95,148 @@ const routes: Routes = [
             ogUrl: 'your og url'
         }
     },
-    { path: 'service', component: ServiceComponent },
-    { path: 'pricing', component: PricingComponent },
-    { path: 'error', component: ErrorComponent },
-    { path: 'contact', component: ContactComponent }
+    {
+        path: 'firma-curatare-podele-pavaje', component: CleaningFloorComponent,
+        data: {
+            title: 'firma curatare padele pavaje',
+            description: 'Allsteam este o firma de curatare canapele in Brasov si in zinele limitrofe. Realizam servicii complexe de curatenie profesionala la domiciliu. Contacteaza-ne pentru detalii.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'firma-curatare-echipamente-horeca-brasov', component: CleaningServiceHorecaComponent,
+        data: {
+            title: 'firma curatare echipamente horeca',
+            description: 'Suntem o firma de curatenie profesionala din Brasov. Ne deplasam la locatia ta pentru serviciul de curatare echipamente horeca si alte tipuri de curatenie.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'curatare-tapiterie-auto-detailing-auto-brasov', component: CleaningAutoComponent,
+        data: {
+            title: 'curatare tapiterie auto',
+            description: 'Allsteam este o echipa de curatenie profesionala ce executa servicii de curatare tapiterie auto si detailing auto in Brasov si in zonele limitrofe.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'servicii-speciale-de-curatare-brasov', component: CleaningSpecialServicesComponent,
+        data: {
+            title: 'servicii speciale de curatate brasov',
+            description: 'Allsteam este o echipa de curatenie profesionala ce executa servicii de curatare tapiterie auto si detailing auto in Brasov si in zonele limitrofe.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'igienizare-dezinfectie-spatii-brasov', component: SanitizationAndDesinfectionComponent,
+        data: {
+            title: 'igienizare dezinfectie brasov',
+            description: 'Suntem o firma de curatenie profesionala din Brasov si zonele limitrofe. Efectuam servicii de igienizare si dezinfectie prin nebulizare in orice spatiu.',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: 'despre-noi', component: AboutComponent,
+        data: {
+            title: 'Curatenie canapele fotolii scaune Brasov',
+            description: 'Allsteam este o firma de curatare canapele in Brasov si in zinele limitrofe. Realizam servicii complexe de curatenie profesionala la domiciliu. Contacteaza-ne pentru detalii.',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'servicii-de-curatenie', component: ServicesComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'servicii-de-curatenie', component: CleaningComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'preturi', component: PricingComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'error', component: ErrorComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'contact', component: ContactComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'setari-gdpr', component: GdprComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: 'confidentialitate', component: ConfidentialityComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'setari-cookies', component: CookiesComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+    {
+        path: 'termeni-si-conditii', component: TermsComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: '404', component: NotFoundComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+
+    {
+        path: 'thank-you', component: ThankYouComponent,
+        data: {
+            title: '',
+            description: '',
+            ogUrl: 'your og url'
+        }
+    },
+
+    { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({

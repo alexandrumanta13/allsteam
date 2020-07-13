@@ -1,17 +1,20 @@
 <div class="header-section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-9 col-md-12">
                 <div class="header-widget">
                     <ul>
-                        <li><i class="icofont-clock-time"></i> Luni - Sambata : 08:00 - 18:00</li>
+                        <li><i class="icofont-clock-time"></i> 
+                            Info și programări L-V: 10-18 | 
+                            Program de lucru L-V: non-stop</li>
+
                         <li><i class="icofont-location-pin"></i> Brasov City</li>
-                        <li><i class="icofont-phone"></i> <a href="tel:+40744192411">(0744) 192 411</a></li>
+                        <li><i class="icofont-phone"></i> <a href="tel:+40758116325">0758-116-325</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="header-social text-right">
                     <ul>
                         <li><a target="_blank" href="https://www.facebook.com/AllSteam01/"><i
@@ -42,7 +45,8 @@
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">Acasa</a>
+                            <a routerLink="/" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Acasa</a>
                         </li>
 
 
@@ -76,13 +80,13 @@
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a routerLink="/curatare-canapele-fotolii-scaune-brasov" class="nav-link" routerLinkActive="active"
                                         [routerLinkActiveOptions]="{exact: true}">Canapele, Fotolii & Saltele</a></li>
-                                <li class="nav-item"><a routerLink="/blog" class="nav-link" routerLinkActive="active"
+                                <li class="nav-item"><a routerLink="/firma-curatare-podele-pavaje" class="nav-link" routerLinkActive="active"
                                         [routerLinkActiveOptions]="{exact: true}">Pardoseala & Pavaje</a></li>
-                                <li class="nav-item"><a routerLink="/blog" class="nav-link" routerLinkActive="active"
+                                <li class="nav-item"><a routerLink="/firma-curatare-echipamente-horeca-brasov" class="nav-link" routerLinkActive="active"
                                         [routerLinkActiveOptions]="{exact: true}">Echipamente HoReCa</a></li>
-                                <li class="nav-item"><a routerLink="/blog" class="nav-link" routerLinkActive="active"
+                                <li class="nav-item"><a routerLink="/curatare-tapiterie-auto-detailing-auto-brasov" class="nav-link" routerLinkActive="active"
                                         [routerLinkActiveOptions]="{exact: true}">Tapiterie Auto & Detailing</a></li>
-                                <li class="nav-item"><a routerLink="/blog" class="nav-link" routerLinkActive="active"
+                                <li class="nav-item"><a routerLink="/servicii-speciale-de-curatare-brasov" class="nav-link" routerLinkActive="active"
                                         [routerLinkActiveOptions]="{exact: true}">Servicii Speciale</a></li>
 
 
@@ -90,36 +94,17 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link dropdown-toggle">Igenizare si Dezinfectare <i
-                                    class="icofont-rounded-right"></i></a>
+                            <a routerLink="/igienizare-dezinfectie-spatii-brasov" class="nav-link"  routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Igenizare si Dezinfectare</a>
 
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a routerLink="/pricing" class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Pricing</a></li>
-
-                                <li class="nav-item"><a routerLink="/recent-project" class="nav-link"
-                                        routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Recent
-                                        Project</a></li>
-
-                                <li class="nav-item"><a routerLink="/error" class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">404 Page</a></li>
-                            </ul>
+                           
                         </li>
 
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link dropdown-toggle">Preturi <i
-                                    class="icofont-rounded-right"></i></a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a routerLink="/team" class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Team</a></li>
-
-                                <li class="nav-item"><a routerLink="/team-two" class="nav-link"
-                                        routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Team two</a>
-                                </li>
-                            </ul>
+                            <a routerLink="/preturi" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Preturi</a>
                         </li>
-                        <li class="nav-item"><a routerLink="/about" class="nav-link" routerLinkActive="active"
+                        <li class="nav-item"><a routerLink="/despre-noi" class="nav-link" routerLinkActive="active"
                                 [routerLinkActiveOptions]="{exact: true}">Despre noi</a></li>
                         <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
                                 [routerLinkActiveOptions]="{exact: true}">Contact</a></li>

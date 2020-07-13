@@ -37,6 +37,18 @@ import { CleaningAfterConstructorComponent } from './components/pages/services/c
 import { CleaningBeautySalonComponent } from './components/pages/services/cleaning-beauty-salon/cleaning-beauty-salon.component';
 import { CleaningComponent } from './components/pages/cleaning/cleaning.component';
 import { CleaningSofaComponent } from './components/pages/cleaning/cleaning-sofa/cleaning-sofa.component';
+import { PortfolioSliderComponent } from './components/portfolio-slider/portfolio-slider.component';
+import { CleaningFloorComponent } from './components/pages/cleaning/cleaning-floor/cleaning-floor.component';
+import { CleaningAutoComponent } from './components/pages/cleaning/cleaning-auto/cleaning-auto.component';
+import { CleaningSpecialServicesComponent } from './components/pages/cleaning/cleaning-special-services/cleaning-special-services.component';
+import { SanitizationAndDesinfectionComponent } from './components/pages/sanitization-and-desinfection/sanitization-and-desinfection.component';
+import { SidebarComponent } from './components/layouts/sidebar/sidebar.component';
+import { GdprComponent } from './components/pages/gdpr/gdpr.component';
+import { ConfidentialityComponent } from './components/pages/confidentiality/confidentiality.component';
+import { CookiesComponent } from './components/pages/cookies/cookies.component';
+import { TermsComponent } from './components/pages/terms/terms.component';
+import { NotFoundComponent } from './components/pages/not-found/not-found.component';
+import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +81,19 @@ import { CleaningSofaComponent } from './components/pages/cleaning/cleaning-sofa
     CleaningAfterConstructorComponent,
     CleaningBeautySalonComponent,
     CleaningComponent,
-    CleaningSofaComponent
+    CleaningSofaComponent,
+    PortfolioSliderComponent,
+    CleaningFloorComponent,
+    CleaningAutoComponent,
+    CleaningSpecialServicesComponent,
+    SanitizationAndDesinfectionComponent,
+    SidebarComponent,
+    GdprComponent,
+    ConfidentialityComponent,
+    CookiesComponent,
+    TermsComponent,
+    NotFoundComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,
