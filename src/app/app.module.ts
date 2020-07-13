@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { PreloaderComponent } from './components/layouts/preloader/preloader.component';
 import { HeaderComponent } from './components/layouts/header/header.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
+
 import { HomeOneComponent } from './components/pages/home-one/home-one.component';
 import { HomeTwoComponent } from './components/pages/home-two/home-two.component';
 import { HomeThreeComponent } from './components/pages/home-three/home-three.component';
@@ -49,6 +50,8 @@ import { CookiesComponent } from './components/pages/cookies/cookies.component';
 import { TermsComponent } from './components/pages/terms/terms.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
+import { CleaningHorecaServicesComponent } from './components/pages/cleaning/cleaning-horeca-services/cleaning-horeca-services.component';
+
 
 @NgModule({
   declarations: [
@@ -56,6 +59,7 @@ import { ThankYouComponent } from './components/pages/thank-you/thank-you.compon
     PreloaderComponent,
     HeaderComponent,
     FooterComponent,
+    
     HomeOneComponent,
     HomeTwoComponent,
     HomeThreeComponent,
@@ -93,17 +97,21 @@ import { ThankYouComponent } from './components/pages/thank-you/thank-you.compon
     CookiesComponent,
     TermsComponent,
     NotFoundComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    CleaningHorecaServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+   
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
-  providers: [],
+  providers: [
+   
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

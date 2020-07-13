@@ -26,6 +26,7 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
 import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import { CleaningComponent } from './components/pages/cleaning/cleaning.component';
+import { CleaningHorecaServicesComponent } from './components/pages/cleaning/cleaning-horeca-services/cleaning-horeca-services.component';
 
 const routes: Routes = [
     {
@@ -104,7 +105,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'firma-curatare-echipamente-horeca-brasov', component: CleaningServiceHorecaComponent,
+        path: 'firma-curatare-echipamente-horeca-brasov', component: CleaningHorecaServicesComponent,
         data: {
             title: 'firma curatare echipamente horeca',
             description: 'Suntem o firma de curatenie profesionala din Brasov. Ne deplasam la locatia ta pentru serviciul de curatare echipamente horeca si alte tipuri de curatenie.',
