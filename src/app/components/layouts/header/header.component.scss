@@ -9,6 +9,23 @@
     flex: 1;
     margin-right: 32px;
 
+    @media only screen and (max-width: 414px) {
+        position: absolute;
+        top: 0;
+        left: 130px;
+        width: 170px;
+        bottom: 0;
+        margin: auto;
+
+        p {
+            font-size: 9px !important;
+        }
+
+        a {
+            font-size: 10px !important;
+        }
+    }
+
     img {
         float: left;
         margin-right: 13px;
@@ -47,5 +64,11 @@
 .is-sticky {
     .navbar-brand {
         width: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mean-container .logo img {
+        height: 40px;
     }
 }

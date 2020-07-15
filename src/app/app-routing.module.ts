@@ -97,7 +97,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'firma-curatare-podele-pavaje', component: CleaningFloorComponent,
+        path: 'firma-curatare-podele-pavaje-brasov', component: CleaningFloorComponent,
         data: {
             title: 'firma curatare padele pavaje',
             description: 'Allsteam este o firma de curatare canapele in Brasov si in zinele limitrofe. Realizam servicii complexe de curatenie profesionala la domiciliu. Contacteaza-ne pentru detalii.',
@@ -154,7 +154,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicii-de-curatenie', component: CleaningComponent,
+        path: 'servicii-de-curatare', component: CleaningComponent,
         data: {
             title: '',
             description: '',
