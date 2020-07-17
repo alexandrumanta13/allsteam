@@ -1112,6 +1112,10 @@ h3 {
         box-shadow: 7px 5px 30px rgba(72,73,121,.15);
         height: 400px;
 
+        @media only screen and (max-width: 414px) {
+            height: 200px;
+        }
+
         &::before {
             position: absolute;
             content: '';
@@ -1123,6 +1127,11 @@ h3 {
             left: 0;
             top: 0;
             border-radius: 10px;
+            @media only screen and (max-width: 414px) {
+               
+                background-repeat: no-repeat;
+            }
+            
         }
         .counter-text {
             margin-bottom:70px;

@@ -37,6 +37,13 @@
         right: 0;
         transform: translate(0%, -50%);
         top: 50%;
+
+        @media only screen and (max-width: 414px) {
+            
+                display: none;
+                
+            
+        }
     }
 
     .home-slider-item .container {
