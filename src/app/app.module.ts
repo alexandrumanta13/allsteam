@@ -51,6 +51,7 @@ import { TermsComponent } from './components/pages/terms/terms.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
 import { CleaningHorecaServicesComponent } from './components/pages/cleaning/cleaning-horeca-services/cleaning-horeca-services.component';
+import { ContactFormComponent } from './components/layouts/contact-form/contact-form.component';
 
 
 @NgModule({
@@ -98,7 +99,8 @@ import { CleaningHorecaServicesComponent } from './components/pages/cleaning/cle
     TermsComponent,
     NotFoundComponent,
     ThankYouComponent,
-    CleaningHorecaServicesComponent
+    CleaningHorecaServicesComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

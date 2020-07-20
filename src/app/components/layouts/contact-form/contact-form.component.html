@@ -1,0 +1,53 @@
+<div class="contact-form">
+    <form id="contactForm" [formGroup]="form" (ngSubmit)="submit()">
+        <div class="row">
+            <div class="col-md-12 col-sm-6">
+                <div class="form-group">
+
+                    <input formControlName="name" id="name" type="text" class="form-control" placeholder="Nume">
+
+                    <div *ngIf="f.name.touched && f.name.invalid" class="alert alert-danger">
+                        <div *ngIf="f.name.errors.required">Introduceti numele</div>
+                        <div *ngIf="f.name.errors.minlength">Numele trebuie sa contina cel putin 3 litere</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-6">
+                <div class="form-group">
+                    <input formControlName="phone" id="phone" type="tel" class="form-control" placeholder="Telefon">
+                    <div *ngIf="f.phone.touched && f.phone.invalid" class="alert alert-danger">
+                        <div *ngIf="f.phone.errors.required">Introduceti numarul</div>
+                        <div *ngIf="f.phone.errors.pattern">Telefonul nu are formatul corect</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-6">
+                <div class="form-group">
+                    <input formControlName="email" id="email" type="text" class="form-control " placeholder="Email">
+                    <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
+                        <div *ngIf="f.email.errors.required">Introduceti emailul</div>
+                        <div *ngIf="f.email.errors.minlength">Formatul nu este corect</div>
+                        <div *ngIf="f.email.errors.required">Formatul nu este corect</div>
+                        <div *ngIf="f.email.errors.pattern">Formatul nu este corect</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                    <textarea formControlName="body" class="form-control" id="body" name="quick-message" cols="30" rows="5" placeholder="Mesajul tau"></textarea>
+                    <div *ngIf="f.body.touched && f.body.invalid" class="alert alert-danger">
+                        <div *ngIf="f.body.errors.required">Introduceti mesajul</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+                <button type="submit" [disabled]="!form.valid" class="default-btn page-btn">Trimite</button>
+            </div>
+        </div>
+    </form>
+</div>

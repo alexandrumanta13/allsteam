@@ -1,0 +1,19 @@
+.price-card-area .plan-features {
+    padding: 30px 30px 30px;
+}
+
+.price-card-area {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-btn {
+    margin-top: auto;
+}
+
+.row {
+    > div {
+        margin-bottom: 30px;
+    }
+}
