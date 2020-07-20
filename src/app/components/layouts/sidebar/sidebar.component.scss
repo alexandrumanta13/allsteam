@@ -1,0 +1,69 @@
+p {
+    a {
+        color: inherit;
+    }
+}
+
+.service-list {
+    &--contact {
+        background-color: #1e968a;
+        padding: 20px 40px;
+        border-radius: 5px;
+        
+        ul {
+            margin-bottom: 0;
+            li {
+                padding: 0;
+                color: white;
+                display: flex;
+                align-items: center;
+                border: none;
+
+                a, i {
+                    color: #fff;
+                }
+
+                a {
+
+                }
+        
+                i{
+                    top: 0;
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    background-color: transparent;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}
+.main-service-area .service-sidebar .discount-text {
+    padding: 10px;
+}
+
+.discount-text {
+    &.prices{
+        padding: 30px 10px;
+        p {
+            color: #fff;
+        }
+
+        ul {
+            margin: 0 0 30px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            li {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+    }
+}
