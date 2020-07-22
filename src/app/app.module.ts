@@ -52,6 +52,7 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
 import { ThankYouComponent } from './components/pages/thank-you/thank-you.component';
 import { CleaningHorecaServicesComponent } from './components/pages/cleaning/cleaning-horeca-services/cleaning-horeca-services.component';
 import { ContactFormComponent } from './components/layouts/contact-form/contact-form.component';
+import { WhatsappComponent } from './components/layouts/whatsapp/whatsapp.component';
 
 
 @NgModule({
@@ -100,7 +101,8 @@ import { ContactFormComponent } from './components/layouts/contact-form/contact-
     NotFoundComponent,
     ThankYouComponent,
     CleaningHorecaServicesComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    WhatsappComponent
   ],
   imports: [
     BrowserModule,
