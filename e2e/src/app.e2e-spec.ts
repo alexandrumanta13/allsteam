@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('kiaz-ng app is running!');
+    expect(page.getTitleText()).toEqual('allsteam-ng app is running!');
   });
 
   afterEach(async () => {
