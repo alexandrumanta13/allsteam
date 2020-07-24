@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'allsteam';
+  src:  url('fonts/allsteam.eot?31rihe');
+  src:  url('fonts/allsteam.eot?31rihe#iefix') format('embedded-opentype'),
+    url('fonts/allsteam.ttf?31rihe') format('truetype'),
+    url('fonts/allsteam.woff?31rihe') format('woff'),
+    url('fonts/allsteam.svg?31rihe#allsteam') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'allsteam' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cleaning:before {
+  content: "\e903";
+}
+.icon-phone:before {
+  content: "\e904";
+}
+.icon-relaxing:before {
+  content: "\e905";
+}
+.icon-positive-review:before {
+  content: "\e902";
+}
+.icon-fingerprint:before {
+  content: "\e900";
+}
+.icon-happy:before {
+  content: "\e901";
+}

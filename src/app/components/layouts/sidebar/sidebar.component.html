@@ -62,87 +62,215 @@
         </ul>
     </div>
     <div class="discount-text prices">
-        <p> CURATENIE LA DOMICILIU</p>
-        <ul>
-            <li>Garsoniera: 400 RON</li>
-            <li>Apartament 2 camere: 450 RON</li>
-            <li>Apartament 3 camere: 550 RON</li>
-            <li>Apartament 5 camere: 650 RON</li>
-            <li>Vile: 4 - 6 RON / mp</li>
-        </ul>
-        <p>IGIENIZARE</p>
-        <ul>
-            <li>Cu dezinfectant: 0,9 RON / mp </li>
-            <li>Cu nebulizare: 2,5 RON / mp</li>
-        </ul>
-
-        <p>CURATENIE DUPA CONSTRUCTOR</p>
-        <ul>
-            <li>Intre 8 RON si 15 RON / mp*</li>
-            <li>In functie de gradul de murdarie</li>
-        </ul>
-
-        <p>CURATENIE GENERALA</p>
-        <ul>
-            <li>6,5 RON / mp</li>
-        </ul>
-
-        <p> CURATENIE DE INTRETINERE</p>
-        <ul>
-            <li>3 RON / mp</li>
-        </ul>
+        <div class="item" *ngIf="router.url.includes('/curatenie-la-domiciliu-brasov')">
+            <p>CURATENIE LA DOMICILIU<p>
+                    <ul>
+                        <li>Garsoniera: 400 RON</li>
+                        <li>Apartament 2 camere: 450 RON</li>
+                        <li>Apartament 3 camere: 550 RON</li>
+                        <li>Apartament 5 camere: 650 RON</li>
+                        <li>Vile: 4 - 6 RON / mp</li>
+                    </ul>
 
 
-        <p>INTRETINERE HORECA</p>
-        <ul>
-            <li>Bucatarii: 8,5 RON / mp</li>
-            <li>Lobby: 5,5 RON / mp</li>
-        </ul>
-        <p>CURATARE CANAPELE</p>
-        <ul>
-            <li>3 locuri: 100 RON</li>
-            <li>4 locuri: 150 RON</li>
-            <li>Fotolii: 50 RON</li>
-            <li>Scaun tapitat: 10 RON</li>
-        </ul>
-
-        <p>CURATARE MOCHETA</p>
-        <ul>
-            <li>9 RON / mp</li>
-        </ul>
+                    <p>IGIENIZARE & DEZINFECTIE</p>
+                    <ul>
+                        <li>Cu dezinfectant: 0,9 RON / mp
+                        </li>
+                        <li>Cu nebulizare: 2,5 RON / mp</li>
+                    </ul>
 
 
-        <p>CURATARE AUTO</p>
-        <ul>
-            <li>Intre 350 RON si 550 RON</li>
-            <li>Cabina TIR: 500 RON</li>
-            <li>AUTOBUZ: 800 RON</li>
-            <li>RULOTA: 500 RON</li>
-            <li>AVION: 3000 RON</li>
-        </ul>
-
-        <p>CURATAT ECHIPAMENTE HORECA</p>
-        <ul>
-            <li>Intre 50 - 150 RON / buc</li>
-        </ul>
+                    <p>CURATENIE DUPA CONSTRUCTOR</p>
+                    <ul>
+                        <li>Intre 8 RON si 15 RON / mp*</li>
+                        <li>*In functie de gradul de murdarie</li>
+                    </ul>
 
 
-        <p>CURATAT HOTE PROFESIONALE</p>
-        <ul>
-            <li>Intre 300 - 500 RON / BUC</li>
-        </ul>
+
+                    <p>CURATARE CANAPELE</p>
+                    <ul>
+                        <li>3 locuri: 100 RON</li>
+                        <li>4 locuri: 150 RON</li>
+                        <li>Fotolii: 50 RON</li>
+                        <li>Scaun tapitat: 10 RON</li>
+                    </ul>
 
 
-        <p>CURATAT MOTOR HOTA</p>
-        <ul>
-            <li>Intre 350 - 750 RON / buc</li>
-        </ul>
+                    <p>CURATARE MOCHETA</p>
+                    <ul>
+                        <li>9 RON / mp</li>
+                    </ul>
+        </div>
+        <div class="item" *ngIf="router.url.includes('/allsteam.ro/curatenie-restaurante-cafenele-baruri-brasov')">
+            <p>INTRETINERE HORECA</p>
+            <ul>
+                <li>Bucatarii: 8,5 RON / mp</li>
+                <li>Lobby: 5,5 RON / mp</li>
+            </ul>
 
 
-        <p>CURATAT TUBULATURA</p>
-        <ul>
-            <li>Intre 90 - 150 RON</li>
-        </ul>
+
+            <p>CURATARE CANAPELE</p>
+            <ul>
+                <li>3 locuri: 100 RON</li>
+                <li>4 locuri: 150 RON</li>
+                <li>Fotolii: 50 RON</li>
+                <li>Scaun tapitat: 10 RON</li>
+            </ul>
+
+
+            <p>CURATARE MOCHETA</p>
+            <ul>
+                <li> 9 RON / mp</li>
+            </ul>
+
+
+            <p>IGIENIZARE & DEZINFECTIE</p>
+            <ul>
+                <li>Cu dezinfectant: 0,9 RON / mp</li>
+                <li>Cu nebulizare: 2,5 RON / mp</li>
+            </ul>
+
+
+            <p>CURATAT ECHIPAMENTE HORECA</p>
+            <ul>
+                <li>Intre 50 - 150 RON / buc</li>
+            </ul>
+
+
+            <p>CURATAT HOTE PROFESIONALE</p>
+            <ul>
+                <li>Intre 300 - 500 RON / BUC</li>
+            </ul>
+
+
+            <p>CURATAT MOTOR HOTA</p>
+            <ul>
+                <li>Intre 350 - 750 RON / buc</li>
+            </ul>
+
+            <p>CURATAT TUBULATURA</p>
+
+            <ul>
+                <li> Intre 90 - 150 RON</li>
+            </ul>
+
+
+        </div>
+        <div class="item" *ngIf="router.url.includes('/igienizare-dezinfectie-spatii-brasov')">
+            <p>IGIENIZARE</p>
+            <ul>
+
+            </ul>
+        </div>
+
+        <div class="item" *ngIf="router.url.includes('/curatenie-dupa-constructor-renovare-brasov')">
+            <p>CURATENIE DUPA CONSTRUCTOR</p>
+            <ul>
+                <li>Intre 8 RON si 15 RON / mp*</li>
+                <li>In functie de gradul de murdarie</li>
+            </ul>
+        </div>
+
+        <div class="item" *ngIf="router.url.includes('/curatenie-saloane-infrumusetare-cabinete-medicale-brasov')">
+            <p>IGIENIZARE & DEZINFECTIE</p>
+            <ul>
+                <li>Cu dezinfectant: 0,9 RON / mp</li>
+                <li>Cu nebulizare: 2,5 RON / mp</li>
+            </ul>
+
+
+            <p>CURATENIE GENERALA</p>
+            <ul>
+                <li>6,5 RON / mp</li>
+            </ul>
+
+
+            <p>CURATENIE DE INTRETINERE</p>
+            <ul>
+                <li>3 RON / mp</li>
+            </ul>
+
+
+            <p>CURATARE CANAPELE</p>
+            <ul>
+                <li>3 locuri: 100 RON</li>
+                <li>4 locuri: 150 RON</li>
+                <li>Fotolii: 50 RON</li>
+                <li>Scaun tapitat: 10 RON</li>
+            </ul>
+
+
+        </div>
+
+        <div class="item" *ngIf="router.url.includes('/curatare-canapele-fotolii-scaune-brasov')">
+            <p> CURATARE CANAPELE</p>
+            <ul>
+                <li>3 locuri: 100 RON</li>
+                <li>4 locuri: 150 RON</li>
+                <li>Fotolii: 50 RON</li>
+                <li>Scaun tapitat: 10 RON</li>
+            </ul>
+
+
+        </div>
+        <div class="item" *ngIf="router.url.includes('/firma-curatare-echipamente-horeca-brasov')">
+            <p>CURATAT ECHIPAMENTE HORECA</p>
+            <ul>
+                <li>Intre 50 - 150 RON / buc</li>
+            </ul>
+
+
+            <p>CURATAT HOTE PROFESIONALE</p>
+            <ul>
+                <li>Intre 300 - 500 RON / BUC</li>
+            </ul>
+
+
+            <p>CURATAT MOTOR HOTA</p>
+            <ul>
+                <li>Intre 350 - 750 RON / buc</li>
+            </ul>
+
+
+            <p>CURATAT TUBULATURA</p>
+            <ul>
+                <li>Intre 90 - 150 RON</li>
+            </ul>
+        </div>
+
+
+        <div class="item" *ngIf="router.url.includes('/curatare-tapiterie-auto-detailing-auto-brasov')">
+            <p>CURATARE AUTO</p>
+            <ul>
+
+                <li>Intre 350 RON si 550 RON</li>
+                <li>Cabina TIR: 500 RON</li>
+                <li>AUTOBUZ: 800 RON</li>
+                <li>RULOTA: 500 RON</li>
+                <li>AVION: 3000 RON</li>
+
+            </ul>
+        </div>
+        <div class="item" *ngIf="router.url.includes('/servicii-speciale-de-curatare-brasov')">
+            <p>SERVICII SPECIALE DE CURATARE</p>
+            <ul>
+                <li>Preturile se stabilesc in functie de complexitatea lucrarii de curatare.</li>
+            </ul>
+            
+            
+        </div>
+        <div class="item" *ngIf="router.url.includes('/igienizare-dezinfectie-spatii-brasov')">
+            <p>IGIENIZARE & DEZINFECTIE</p>
+            <ul>
+                <li>Cu dezinfectant: 0,9 RON / mp </li>
+                <li>Cu nebulizare: 2,5 RON / mp</li>
+            </ul>
+            
+            
+        </div>
         <div class="discount-shapes"><img src="assets/img/counter/1.png" alt="shape"><img src="assets/img/counter/2.png"
                 alt="shape"><img src="assets/img/counter/3.png" alt="shape"><img src="assets/img/counter/4.png"
                 alt="shape"><img src="assets/img/counter/5.png" alt="shape"><img src="assets/img/counter/6.png"

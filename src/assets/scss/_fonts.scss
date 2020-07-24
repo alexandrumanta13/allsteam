@@ -27,6 +27,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cleaning {
+  &:before {
+    content: $icon-cleaning; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-relaxing {
+  &:before {
+    content: $icon-relaxing; 
+  }
+}
 .icon-positive-review {
   &:before {
     content: $icon-positive-review; 

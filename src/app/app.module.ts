@@ -53,6 +53,9 @@ import { ThankYouComponent } from './components/pages/thank-you/thank-you.compon
 import { CleaningHorecaServicesComponent } from './components/pages/cleaning/cleaning-horeca-services/cleaning-horeca-services.component';
 import { ContactFormComponent } from './components/layouts/contact-form/contact-form.component';
 import { WhatsappComponent } from './components/layouts/whatsapp/whatsapp.component';
+import { TestimonialComponent } from './components/layouts/testimonial/testimonial.component';
+import { BiocidSectionComponent } from './components/layouts/biocid-section/biocid-section.component';
+import { LogoSectionComponent } from './components/layouts/logo-section/logo-section.component';
 
 
 @NgModule({
@@ -102,7 +105,10 @@ import { WhatsappComponent } from './components/layouts/whatsapp/whatsapp.compon
     ThankYouComponent,
     CleaningHorecaServicesComponent,
     ContactFormComponent,
-    WhatsappComponent
+    WhatsappComponent,
+    TestimonialComponent,
+    BiocidSectionComponent,
+    LogoSectionComponent
   ],
   imports: [
     BrowserModule,

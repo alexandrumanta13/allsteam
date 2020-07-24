@@ -146,7 +146,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'servicii-de-curatenie', component: ServicesComponent,
+        path: 'firma-curatenie-brasov', component: ServicesComponent,
         data: {
             title: '',
             description: '',
@@ -162,7 +162,7 @@ const routes: Routes = [
         }
     },
     {
-        path: 'preturi', component: PricingComponent,
+        path: 'preturi-servicii-curatenie-brasov', component: PricingComponent,
         data: {
             title: '',
             description: '',
