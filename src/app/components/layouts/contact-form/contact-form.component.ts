@@ -18,7 +18,6 @@ export class ContactFormComponent implements OnInit {
 
   http: HttpClient;
 
-ef
   constructor(http: HttpClient, private router: Router,) {
     
     this.http = http;
@@ -29,7 +28,7 @@ ef
     email: new FormControl('', [Validators.required, Validators.email, Validators.pattern(new RegExp("[A-Za-z0-9._%-]+@[A-Za-z0-9._%-]+\\.[a-z]{2,3}"))]),
     phone: new FormControl('', [Validators.required, Validators.pattern(new RegExp("[0-9 ]{10}"))]),
     body: new FormControl('', Validators.required),
-    categories: new FormControl('', Validators.required)
+    // categories: new FormControl('', Validators.required)
   });
 
   get f() {
@@ -46,7 +45,7 @@ ef
       email: this.form.value.email,
       name: this.form.value.name,
       phone: this.form.value.phone,
-      categories: this.form.value.categories,
+      // categories: this.form.value.categories,
       body: this.form.value.body,
     };
 

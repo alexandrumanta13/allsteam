@@ -28,8 +28,8 @@
                     <input formControlName="email" id="email" type="text" class="form-control " placeholder="Email">
                     <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
                         <div *ngIf="f.email.errors.required">Introduceti emailul</div>
-                        <div *ngIf="f.email.errors.minlength">Formatul nu este corect</div>
-                        <div *ngIf="f.email.errors.required">Formatul nu este corect</div>
+                        
+                        
                         <div *ngIf="f.email.errors.pattern">Formatul nu este corect</div>
                     </div>
                 </div>
