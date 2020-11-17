@@ -229,7 +229,7 @@ const routes: Routes = [
     },
 
     {
-        path: 'thank-you', component: ThankYouComponent,
+        path: 'mesaj-trimis', component: ThankYouComponent,
         data: {
             title: '',
             description: '',

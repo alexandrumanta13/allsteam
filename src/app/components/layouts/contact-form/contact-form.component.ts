@@ -54,7 +54,7 @@ export class ContactFormComponent implements OnInit {
     this.http.post(this.endpoint, postVars)
       .subscribe(
         response => {
-          this.router.navigate(['/thank-you'])
+          this.router.navigate(['/mesaj-trimis'])
         }
         
       )
